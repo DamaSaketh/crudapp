@@ -1,0 +1,256 @@
+2026-04-03 10:21:43 [main] INFO  com.example.crudapp.CrudappApplication - Starting CrudappApplication using Java 17.0.11 with PID 14880 (C:\Users\Admin\Desktop\project\crudapp\build\classes\java\main started by Admin in C:\Users\Admin\Desktop\project\crudapp)
+2026-04-03 10:21:43 [main] DEBUG com.example.crudapp.CrudappApplication - Running with Spring Boot v3.2.2, Spring v6.1.3
+2026-04-03 10:21:43 [main] INFO  com.example.crudapp.CrudappApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 10:21:45 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-03 10:21:45 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 159 ms. Found 1 JPA repository interface.
+2026-04-03 10:21:46 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2026-04-03 10:21:46 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2026-04-03 10:21:46 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 10:21:46 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2026-04-03 10:21:46 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 10:21:46 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3522 ms
+2026-04-03 10:21:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 10:21:47 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cruddb user=SA
+2026-04-03 10:21:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 10:21:47 [main] INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cruddb'
+2026-04-03 10:21:47 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+2026-04-03 10:21:48 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2026-04-03 10:21:49 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-04-03 10:21:49 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2026-04-03 10:21:49 [main] INFO  liquibase.command - Using deploymentId: 5191909321
+2026-04-03 10:21:49 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-04-03 10:21:49 [main] INFO  liquibase.changelog - Table APP_USER created
+2026-04-03 10:21:49 [main] INFO  liquibase.changelog - ChangeSet db/changelog/db.changelog-master.xml::1-create-app-user::you ran successfully in 25ms
+2026-04-03 10:21:49 [main] INFO  liquibase.changelog - New row inserted into APP_USER
+2026-04-03 10:21:49 [main] INFO  liquibase.changelog - New row inserted into APP_USER
+2026-04-03 10:21:49 [main] INFO  liquibase.changelog - ChangeSet db/changelog/db.changelog-master.xml::2-insert-users::you ran successfully in 11ms
+2026-04-03 10:21:49 [main] INFO  liquibase.changelog - Columns test_column(VARCHAR(255)) added to APP_USER
+2026-04-03 10:21:49 [main] INFO  liquibase.changelog - ChangeSet db/changelog/db.changelog-master.xml::3-add-test-column::you ran successfully in 16ms
+2026-04-03 10:21:49 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-04-03 10:21:49 [main] INFO  liquibase.util - Run:                          3
+2026-04-03 10:21:49 [main] INFO  liquibase.util - Previously run:               0
+2026-04-03 10:21:49 [main] INFO  liquibase.util - Filtered out:                 0
+2026-04-03 10:21:49 [main] INFO  liquibase.util - -------------------------------
+2026-04-03 10:21:49 [main] INFO  liquibase.util - Total change sets:            3
+2026-04-03 10:21:49 [main] INFO  liquibase.util - Update summary generated
+2026-04-03 10:21:49 [main] INFO  liquibase.command - Update command completed successfully.
+2026-04-03 10:21:49 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2026-04-03 10:21:49 [main] INFO  liquibase.command - Command execution complete
+2026-04-03 10:21:50 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-03 10:21:50 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-03 10:21:52 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-03 10:21:53 [main] DEBUG com.example.crudapp.security.JwtFilter - Filter 'jwtFilter' configured for use
+2026-04-03 10:21:53 [main] WARN  org.springframework.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.filter.OncePerRequestFilter.doFilter(jakarta.servlet.ServletRequest,jakarta.servlet.ServletResponse,jakarta.servlet.FilterChain) throws jakarta.servlet.ServletException,java.io.IOException] because it is marked as final, consider using interface-based JDK proxies instead.
+2026-04-03 10:21:53 [main] WARN  org.springframework.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.filter.GenericFilterBean.init(jakarta.servlet.FilterConfig) throws jakarta.servlet.ServletException] because it is marked as final, consider using interface-based JDK proxies instead.
+2026-04-03 10:21:54 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3146c61d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6321e29b, org.springframework.security.web.context.SecurityContextHolderFilter@375376d5, org.springframework.security.web.header.HeaderWriterFilter@6c98079, org.springframework.web.filter.CorsFilter@12b2fcaf, org.springframework.security.web.authentication.logout.LogoutFilter@675c1335, com.example.crudapp.security.JwtFilter@2e04dbc1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1dfadb7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4602fa2f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1100363d, org.springframework.security.web.access.ExceptionTranslationFilter@4eba3c3f, org.springframework.security.web.access.intercept.AuthorizationFilter@4e67f0a0]
+2026-04-03 10:21:55 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2026-04-03 10:21:55 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path ''
+2026-04-03 10:21:55 [main] INFO  com.example.crudapp.CrudappApplication - Started CrudappApplication in 13.196 seconds (process running for 14.021)
+2026-04-03 10:21:59 [http-nio-9090-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-03 10:21:59 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-03 10:21:59 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-04-03 10:21:59 [http-nio-9090-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/index.html
+2026-04-03 10:21:59 [http-nio-9090-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/index.html
+2026-04-03 10:21:59 [http-nio-9090-exec-1] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-04-03 10:21:59 [http-nio-9090-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/index.css
+2026-04-03 10:21:59 [http-nio-9090-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui-bundle.js
+2026-04-03 10:21:59 [http-nio-9090-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui.css
+2026-04-03 10:21:59 [http-nio-9090-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui-bundle.js
+2026-04-03 10:21:59 [http-nio-9090-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/index.css
+2026-04-03 10:21:59 [http-nio-9090-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui.css
+2026-04-03 10:21:59 [http-nio-9090-exec-3] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-04-03 10:21:59 [http-nio-9090-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2026-04-03 10:21:59 [http-nio-9090-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2026-04-03 10:21:59 [http-nio-9090-exec-2] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-04-03 10:21:59 [http-nio-9090-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-initializer.js
+2026-04-03 10:21:59 [http-nio-9090-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-initializer.js
+2026-04-03 10:21:59 [http-nio-9090-exec-4] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-04-03 10:21:59 [http-nio-9090-exec-6] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-04-03 10:21:59 [http-nio-9090-exec-2] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-04-03 10:21:59 [http-nio-9090-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /v3/api-docs/swagger-config
+2026-04-03 10:21:59 [http-nio-9090-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /v3/api-docs/swagger-config
+2026-04-03 10:21:59 [http-nio-9090-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/favicon-32x32.png
+2026-04-03 10:21:59 [http-nio-9090-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/favicon-32x32.png
+2026-04-03 10:21:59 [http-nio-9090-exec-7] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-04-03 10:21:59 [http-nio-9090-exec-5] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-04-03 10:22:00 [http-nio-9090-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /v3/api-docs
+2026-04-03 10:22:00 [http-nio-9090-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /v3/api-docs
+2026-04-03 10:22:00 [http-nio-9090-exec-8] INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 524 ms
+2026-04-03 10:22:00 [http-nio-9090-exec-8] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-04-03 10:22:18 [http-nio-9090-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console
+2026-04-03 10:22:18 [http-nio-9090-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console
+2026-04-03 10:22:18 [http-nio-9090-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/
+2026-04-03 10:22:18 [http-nio-9090-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/
+2026-04-03 10:22:18 [http-nio-9090-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/stylesheet.css
+2026-04-03 10:22:18 [http-nio-9090-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/stylesheet.css
+2026-04-03 10:22:19 [http-nio-9090-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/login.jsp?jsessionid=0050913af750d4bb4f7bf41eeb3b8e01
+2026-04-03 10:22:19 [http-nio-9090-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/login.jsp?jsessionid=0050913af750d4bb4f7bf41eeb3b8e01
+2026-04-03 10:22:19 [http-nio-9090-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/background.gif
+2026-04-03 10:22:19 [http-nio-9090-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/background.gif
+2026-04-03 10:22:19 [http-nio-9090-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /favicon.ico
+2026-04-03 10:22:19 [http-nio-9090-exec-6] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-04-03 10:22:19 [http-nio-9090-exec-6] DEBUG org.springframework.security.web.authentication.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-04-03 10:22:19 [http-nio-9090-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /error
+2026-04-03 10:22:19 [http-nio-9090-exec-6] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-04-03 10:22:19 [http-nio-9090-exec-6] DEBUG org.springframework.security.web.savedrequest.HttpSessionRequestCache - Saved request http://localhost:9090/error?continue to session
+2026-04-03 10:22:19 [http-nio-9090-exec-6] DEBUG org.springframework.security.web.authentication.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-04-03 10:22:33 [http-nio-9090-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing POST /h2-console/login.do?jsessionid=0050913af750d4bb4f7bf41eeb3b8e01
+2026-04-03 10:22:33 [http-nio-9090-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured POST /h2-console/login.do?jsessionid=0050913af750d4bb4f7bf41eeb3b8e01
+2026-04-03 10:22:33 [http-nio-9090-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/header.jsp?jsessionid=0050913af750d4bb4f7bf41eeb3b8e01
+2026-04-03 10:22:33 [http-nio-9090-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/header.jsp?jsessionid=0050913af750d4bb4f7bf41eeb3b8e01
+2026-04-03 10:22:33 [http-nio-9090-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/tables.do?jsessionid=0050913af750d4bb4f7bf41eeb3b8e01
+2026-04-03 10:22:33 [http-nio-9090-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/tables.do?jsessionid=0050913af750d4bb4f7bf41eeb3b8e01
+2026-04-03 10:22:33 [http-nio-9090-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/query.jsp?jsessionid=0050913af750d4bb4f7bf41eeb3b8e01
+2026-04-03 10:22:33 [http-nio-9090-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/query.jsp?jsessionid=0050913af750d4bb4f7bf41eeb3b8e01
+2026-04-03 10:22:33 [http-nio-9090-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/help.jsp?jsessionid=0050913af750d4bb4f7bf41eeb3b8e01
+2026-04-03 10:22:33 [http-nio-9090-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/help.jsp?jsessionid=0050913af750d4bb4f7bf41eeb3b8e01
+2026-04-03 10:22:33 [http-nio-9090-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/stylesheet.css
+2026-04-03 10:22:33 [http-nio-9090-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/stylesheet.css
+2026-04-03 10:22:33 [http-nio-9090-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/icon_line.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/icon_disconnect.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/icon_disconnect.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/icon_commit.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/icon_line.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/icon_refresh.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/icon_refresh.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/icon_commit.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/icon_rollback.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/icon_rollback.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/icon_run.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/icon_run.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/icon_stop.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/icon_help.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/icon_run_selected.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/icon_stop.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/icon_help.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/icon_run_selected.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/icon_history.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/icon_history.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/tree.js
+2026-04-03 10:22:33 [http-nio-9090-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/tree.js
+2026-04-03 10:22:33 [http-nio-9090-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/tree_minus.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/tree_plus.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/tree_plus.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/tree_minus.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/tree_empty.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/tree_database.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/tree_empty.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/tree_database.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/tree_column.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/tree_table.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/tree_column.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/tree_table.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/tree_type.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/tree_type.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/tree_index.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/tree_index.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/tree_folder.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/tree_folder.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/tree_index_az.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/tree_users.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/tree_view.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/tree_users.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/tree_index_az.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/tree_view.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/tree_info.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/tree_info.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/tree_user.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/tree_user.gif
+2026-04-03 10:22:33 [http-nio-9090-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /favicon.ico
+2026-04-03 10:22:33 [http-nio-9090-exec-7] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-04-03 10:22:33 [http-nio-9090-exec-7] DEBUG org.springframework.security.web.authentication.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-04-03 10:22:33 [http-nio-9090-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /error
+2026-04-03 10:22:33 [http-nio-9090-exec-7] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-04-03 10:22:33 [http-nio-9090-exec-7] DEBUG org.springframework.security.web.savedrequest.HttpSessionRequestCache - Saved request http://localhost:9090/error?continue to session
+2026-04-03 10:22:33 [http-nio-9090-exec-7] DEBUG org.springframework.security.web.authentication.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2026-04-03 10:22:38 [http-nio-9090-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing POST /h2-console/query.do?jsessionid=0050913af750d4bb4f7bf41eeb3b8e01
+2026-04-03 10:22:38 [http-nio-9090-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured POST /h2-console/query.do?jsessionid=0050913af750d4bb4f7bf41eeb3b8e01
+2026-04-03 10:22:38 [http-nio-9090-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /h2-console/table.js
+2026-04-03 10:22:38 [http-nio-9090-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /h2-console/table.js
+2026-04-03 10:23:01 [http-nio-9090-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing POST /auth/login
+2026-04-03 10:23:01 [http-nio-9090-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured POST /auth/login
+2026-04-03 10:23:02 [http-nio-9090-exec-1] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-04-03 10:23:32 [http-nio-9090-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /users
+2026-04-03 10:23:32 [http-nio-9090-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /users
+2026-04-03 10:23:32 [http-nio-9090-exec-6] INFO  com.example.crudapp.controller.UserController - GET /users - Fetching all users
+2026-04-03 10:23:32 [http-nio-9090-exec-6] INFO  com.example.crudapp.service.UserService - Fetching all users from database
+2026-04-03 10:23:54 [http-nio-9090-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /users
+2026-04-03 10:23:54 [http-nio-9090-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /users
+2026-04-03 10:23:54 [http-nio-9090-exec-2] INFO  com.example.crudapp.controller.UserController - GET /users - Fetching all users
+2026-04-03 10:23:54 [http-nio-9090-exec-2] INFO  com.example.crudapp.service.UserService - Fetching all users from database
+2026-04-03 11:12:45 [http-nio-9090-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/index.html
+2026-04-03 11:12:45 [http-nio-9090-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/index.html
+2026-04-03 11:12:45 [http-nio-9090-exec-6] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-04-03 11:12:45 [http-nio-9090-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui.css
+2026-04-03 11:12:45 [http-nio-9090-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui.css
+2026-04-03 11:12:45 [http-nio-9090-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/index.css
+2026-04-03 11:12:45 [http-nio-9090-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/index.css
+2026-04-03 11:12:45 [http-nio-9090-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui-bundle.js
+2026-04-03 11:12:45 [http-nio-9090-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui-bundle.js
+2026-04-03 11:12:45 [http-nio-9090-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2026-04-03 11:12:45 [http-nio-9090-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2026-04-03 11:12:45 [http-nio-9090-exec-7] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-04-03 11:12:45 [http-nio-9090-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-initializer.js
+2026-04-03 11:12:45 [http-nio-9090-exec-8] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-04-03 11:12:45 [http-nio-9090-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-initializer.js
+2026-04-03 11:12:45 [http-nio-9090-exec-10] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-04-03 11:12:45 [http-nio-9090-exec-3] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-04-03 11:12:45 [http-nio-9090-exec-9] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-04-03 11:12:46 [http-nio-9090-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /v3/api-docs/swagger-config
+2026-04-03 11:12:46 [http-nio-9090-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /v3/api-docs/swagger-config
+2026-04-03 11:12:46 [http-nio-9090-exec-4] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-04-03 11:12:46 [http-nio-9090-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /v3/api-docs
+2026-04-03 11:12:46 [http-nio-9090-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /v3/api-docs
+2026-04-03 11:12:46 [http-nio-9090-exec-2] DEBUG org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-04-03 11:13:07 [http-nio-9090-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /users
+2026-04-03 11:13:08 [http-nio-9090-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /users
+2026-04-03 11:13:08 [http-nio-9090-exec-5] INFO  com.example.crudapp.controller.UserController - GET /users - Fetching all users
+2026-04-03 11:13:08 [http-nio-9090-exec-5] INFO  com.example.crudapp.service.UserService - Fetching all users from database
+2026-04-03 11:15:36 [main] INFO  com.example.crudapp.CrudappApplication - Starting CrudappApplication using Java 17.0.11 with PID 20072 (C:\Users\Admin\Desktop\project\crudapp\build\classes\java\main started by Admin in C:\Users\Admin\Desktop\project\crudapp)
+2026-04-03 11:15:36 [main] DEBUG com.example.crudapp.CrudappApplication - Running with Spring Boot v3.2.2, Spring v6.1.3
+2026-04-03 11:15:36 [main] INFO  com.example.crudapp.CrudappApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-03 11:15:38 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-03 11:15:38 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 166 ms. Found 1 JPA repository interface.
+2026-04-03 11:15:39 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2026-04-03 11:15:39 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2026-04-03 11:15:39 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-03 11:15:39 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2026-04-03 11:15:40 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-03 11:15:40 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3604 ms
+2026-04-03 11:15:40 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-03 11:15:40 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cruddb user=SA
+2026-04-03 11:15:40 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-03 11:15:40 [main] INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cruddb'
+2026-04-03 11:15:41 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+2026-04-03 11:15:42 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2026-04-03 11:15:42 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-04-03 11:15:42 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2026-04-03 11:15:42 [main] INFO  liquibase.command - Using deploymentId: 5195142736
+2026-04-03 11:15:42 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-04-03 11:15:42 [main] INFO  liquibase.changelog - Table APP_USER created
+2026-04-03 11:15:42 [main] INFO  liquibase.changelog - ChangeSet db/changelog/db.changelog-master.xml::1-create-app-user::you ran successfully in 23ms
+2026-04-03 11:15:42 [main] INFO  liquibase.changelog - New row inserted into APP_USER
+2026-04-03 11:15:42 [main] INFO  liquibase.changelog - New row inserted into APP_USER
+2026-04-03 11:15:42 [main] INFO  liquibase.changelog - ChangeSet db/changelog/db.changelog-master.xml::2-insert-users::you ran successfully in 9ms
+2026-04-03 11:15:42 [main] INFO  liquibase.changelog - Columns test_column(VARCHAR(255)) added to APP_USER
+2026-04-03 11:15:42 [main] INFO  liquibase.changelog - ChangeSet db/changelog/db.changelog-master.xml::3-add-test-column::you ran successfully in 22ms
+2026-04-03 11:15:42 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-04-03 11:15:42 [main] INFO  liquibase.util - Run:                          3
+2026-04-03 11:15:42 [main] INFO  liquibase.util - Previously run:               0
+2026-04-03 11:15:42 [main] INFO  liquibase.util - Filtered out:                 0
+2026-04-03 11:15:42 [main] INFO  liquibase.util - -------------------------------
+2026-04-03 11:15:42 [main] INFO  liquibase.util - Total change sets:            3
+2026-04-03 11:15:42 [main] INFO  liquibase.util - Update summary generated
+2026-04-03 11:15:42 [main] INFO  liquibase.command - Update command completed successfully.
+2026-04-03 11:15:42 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2026-04-03 11:15:42 [main] INFO  liquibase.command - Command execution complete
+2026-04-03 11:15:44 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-03 11:15:44 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-03 11:15:46 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-03 11:15:47 [main] DEBUG com.example.crudapp.security.JwtFilter - Filter 'jwtFilter' configured for use
+2026-04-03 11:15:47 [main] WARN  org.springframework.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.filter.OncePerRequestFilter.doFilter(jakarta.servlet.ServletRequest,jakarta.servlet.ServletResponse,jakarta.servlet.FilterChain) throws jakarta.servlet.ServletException,java.io.IOException] because it is marked as final, consider using interface-based JDK proxies instead.
+2026-04-03 11:15:47 [main] WARN  org.springframework.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.filter.GenericFilterBean.init(jakarta.servlet.FilterConfig) throws jakarta.servlet.ServletException] because it is marked as final, consider using interface-based JDK proxies instead.
+2026-04-03 11:15:48 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@519b726a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34272839, org.springframework.security.web.context.SecurityContextHolderFilter@2138386f, org.springframework.security.web.header.HeaderWriterFilter@35ca0dac, org.springframework.web.filter.CorsFilter@708378cc, org.springframework.security.web.authentication.logout.LogoutFilter@6321e29b, com.example.crudapp.security.JwtFilter@5cd5e1b6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5146ae5e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@642270ad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d691d4f, org.springframework.security.web.access.ExceptionTranslationFilter@2f2e75ae, org.springframework.security.web.access.intercept.AuthorizationFilter@74161ed7]
+2026-04-03 11:15:48 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2026-04-03 11:15:49 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path ''
+2026-04-03 11:15:49 [main] INFO  com.example.crudapp.CrudappApplication - Started CrudappApplication in 14.076 seconds (process running for 14.915)

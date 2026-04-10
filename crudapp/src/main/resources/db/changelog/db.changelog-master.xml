@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+       http://www.liquibase.org/xml/ns/dbchangelog
+       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
+    <changeSet id="1-create-app-user" author="you">
+        <createTable tableName="APP_USER">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="email" type="VARCHAR(255)"/>
+            <column name="password" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="2-insert-users" author="you">
+        <insert tableName="APP_USER">
+            <column name="name" value="Alice"/>
+            <column name="email" value="alice@example.com"/>
+            <column name="password" value="$2a$10$o9bPDEMPqoTQ7UCNFtNLCu70z1rsgBeXKxykP2g10gZOicbFl4ka2"/>
+        </insert>
+        <insert tableName="APP_USER">
+            <column name="name" value="Sai"/>
+            <column name="email" value="sai@example.com"/>
+            <column name="password" value="$2a$10$Tbs.jIBBcp2CWA8dazHhje0u9IwdQbd.Gdj.txwA8QWhB9hzkPdRy"/>
+        </insert>
+    </changeSet>
+    <changeSet id="3-add-test-column" author="you">
+    <addColumn tableName="APP_USER">
+        <column name="test_column" type="VARCHAR(255)">
+            <constraints nullable="true"/>
+        </column>
+    </addColumn>
+</changeSet>
+
+</databaseChangeLog>
