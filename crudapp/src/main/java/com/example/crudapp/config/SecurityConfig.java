@@ -124,7 +124,7 @@
 // }
 
 package com.example.crudapp.config;
-
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
@@ -140,6 +140,11 @@ import com.example.crudapp.security.JwtFilter;
 
 @SuppressWarnings("unused")
 @Configuration
+// @ConditionalOnProperty(
+//     name = "app.security.enabled",
+//     havingValue = "true",
+//     matchIfMissing = true
+// )
 public class SecurityConfig {
 
     private final JwtFilter jwtFilter;

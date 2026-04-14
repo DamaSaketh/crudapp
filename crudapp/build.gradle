@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '3.2.2'
     id 'io.spring.dependency-management' version '1.1.3'
+      id 'jacoco'
 }
 
 group = 'com.example'
@@ -24,6 +25,10 @@ dependencies {
     testImplementation 'org.springframework.security:spring-security-test'
     implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0'
     implementation 'org.liquibase:liquibase-core'
+    testImplementation 'org.mockito:mockito-core:5.11.0'
+testImplementation 'org.mockito:mockito-junit-jupiter:5.11.0'
+testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
 }
 
 // Keep Java compile options
@@ -37,4 +42,23 @@ task runPasswordEncoder(type: JavaExec) {
     description = 'Run PasswordEncoderUtil to generate encoded passwords'
     classpath = sourceSets.main.runtimeClasspath
     main = 'com.example.crudapp.util.PasswordEncoderUtil'
+}
+
+
+
+jacoco {
+    toolVersion = "0.8.11"
+}
+
+test {
+    useJUnitPlatform()
+    finalizedBy jacocoTestReport
+}
+
+jacocoTestReport {
+    dependsOn test
+    reports {
+        xml.required = true
+        html.required = true
+    }
 }

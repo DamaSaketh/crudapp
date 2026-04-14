@@ -1,10 +1,11 @@
 package com.example.crudapp.service;
 
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+
 import com.example.crudapp.model.User;
 import com.example.crudapp.repository.UserRepository;
 import com.example.crudapp.security.JwtUtil;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.stereotype.Service;
 
 @Service
 public class AuthService {
